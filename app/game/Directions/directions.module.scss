@@ -1,0 +1,23 @@
+.hasError {
+  color: red;
+}
+.correct {
+  color: green;
+  animation: correctAnswer 1s linear;
+}
+.button {
+  height: 36px;
+  width: 120px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background: linear-gradient(#fff, #f0f0f0);
+  @apply mt-2;
+}
+
+@keyframes correctAnswer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

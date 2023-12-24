@@ -1,0 +1,47 @@
+.stateCard {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 60px;
+  width: 120px;
+  color: #206090;
+  font-weight: 600;
+  background: #f0f0f0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 60px;
+    width: 120px;
+    background: linear-gradient(18deg, #222, #555);
+    filter: blur(8px);
+    transform: scale(0.86);
+    z-index: -1;
+  }
+}
+
+.selected {
+  color: white;
+  background: linear-gradient(#205090, #102060, #205090);
+  border: 2px solid black;
+}
+
+.hasError {
+  animation: showError 500ms linear 0s 3;
+}
+
+@keyframes showError {
+  from {
+    background-color: red;
+  }
+  to {
+  }
+}

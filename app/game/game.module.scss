@@ -1,0 +1,15 @@
+.game {
+  .lists {
+    display: grid;
+    row-gap: 20px;
+  }
+  .spacer {
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .hasError {
+    color: red;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+}

@@ -1,0 +1,25 @@
+
+    .bubble {
+        display: block;
+        width:100px;
+        height:40px;
+        background-color: #2050c0;
+        position: absolute;
+        border-radius: 6px;
+        top:300px;
+        left:500px;
+
+        &::before {
+            display: block;
+            background-color: #2050c0;
+            width:10px;
+            height:10px;
+            content: '';
+            position: absolute;
+            transform: skew(45deg,45deg);
+            left:10px;
+            bottom:-30px;
+            rotate: 45deg;
+        }
+    }
+
