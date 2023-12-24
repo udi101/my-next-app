@@ -55,6 +55,10 @@ export const useStates = () => {
     setCapitalList((prevCapitalList) => prevCapitalList.filter((capital) => capital.name !== _capital))
   }
 
+  const resetSelections = () => {
+    setSelectedCapital('')
+    setSelectedState('')
+  }
   // This is checking when capital is clicked
   useEffect(() => {
     if (!selectedCapital || !selectedState) {
@@ -67,6 +71,7 @@ export const useStates = () => {
         setRightAnswer(false)
       }, 3000)
       removeSelectedFromList(selectedCapital)
+      resetSelections()
     } else {
       setTimeout(() => {
         setWrongAnswer(true)

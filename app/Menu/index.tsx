@@ -12,6 +12,7 @@ export const Menu = () => {
       <Link href="/employees/register">Employees</Link>
       <Link href="/calc">Calc</Link>
       <Link href="/game">Game</Link>
+      <Link href="/callback">Callback</Link>
     </div>
   )
 }
